@@ -1,7 +1,6 @@
 import React from "react";
 import LocationSVG from "../SVGComponents/LocationSVG";
 import AlarmSVG from "../SVGComponents/AlarmSVG";
-import LineupSlider from "./LineupSlider";
 import Image from "next/image";
 
 const images = [
@@ -38,7 +37,6 @@ const EventsRightSide = () => {
           Lorem ipsum dolor sit amet consectetur. Ac lorem massa in morbi et sed
           ipsum. Pellentesque mattis condimentum ut nulla.
         </p>
-        {/* <LineupSlider /> */}
         <p className="text-white font-semibold text-[26px]">Artist Lineup</p>
         <div className="flex mt-8 w-full lg:w-fit">
           <div  className="w-1/3 h-[180px] sm:h-[250px] lg:h-[120px] lg:w-[120px] xl:h-[140px] xl:w-[140px] 2xl:h-[180px] 2xl:w-[180px] relative">
