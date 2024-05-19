@@ -13,21 +13,37 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --primary-background:#15181B;
+    --secondary-background:#B9A0FF;
+    --destructive-background:#282B30;
+    --accent-color:#FFCA5F;
+    --muted-color:#FFFFFF33;
+    --muted-background:#484E56;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  background-color: var(--primary-background);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* font-colors */
+.text-accent{
+  color: var(--accent-color);
+}
+.text-muted{
+  color: var(--muted-color);
+}
+
+/* background-colors */
+.bg-secondary{
+  background-color: var(--secondary-background);
+}
+.bg-destructive{
+  background-color: var(--destructive-background);
+}
+.bg-muted{
+  background-color: var(--muted-background);
+}
+.bg-accent{
+  background-color: var(--accent-color);
 }
