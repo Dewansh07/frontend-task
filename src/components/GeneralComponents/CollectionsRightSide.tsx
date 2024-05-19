@@ -86,8 +86,8 @@ const CollectionsRightSide = () => {
       <p className="text-sm mt-12 mb-4">Collectibles</p>
       <div className="overflow-hidden lg:-mr-[100px]">
         <Swiper
-          slidesPerView={2} // Show part of the next slides
-          spaceBetween={30}
+          slidesPerView={3} // Show part of the next slides
+          spaceBetween={20}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -114,8 +114,8 @@ const CollectionsRightSide = () => {
           {collectibles.map((item, index) => (
             <SwiperSlide className="" key={index}>
               <div className="flex flex-col gap-2 bg-secondary rounded-md px-4 py-4 cursor-pointer">
-                <div className="flex justify-between items-center">
-                  <p className="text-white bg-black px-4 text-xs py-1 rounded-2xl">
+                <div className="flex flex-col xs:flex-row gap-1 xs:gap-0 justify-between xs:items-center">
+                  <p className="text-white bg-black px-4 text-xs py-1 rounded-2xl w-fit">
                     {item.year}
                   </p>
                   <p className="text-black text-xs">By {item.designer}</p>

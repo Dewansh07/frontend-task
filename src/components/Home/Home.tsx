@@ -96,7 +96,7 @@ const Home = () => {
               <Image src={"/images/barcode.png"} alt="qr-scanner" fill />
             </div>
           )}
-          <button className="self-start sm:self-end text-black bg-accent text-xl sm:text-2xl px-4 sm:px-6 py-2 rounded-3xl font-bold sm:ml-auto lg:mr-6">
+          <button className="self-start xs:self-end text-black bg-accent text-xl sm:text-2xl px-4 sm:px-6 py-2 rounded-3xl font-bold xs:ml-auto lg:mr-6">
             Join Waitlist
           </button>
         </div>

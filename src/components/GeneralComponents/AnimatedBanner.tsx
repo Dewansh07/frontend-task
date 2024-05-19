@@ -50,9 +50,9 @@ const AnimatedBanner = ({ windowWidth }: any) => {
           className={`relative w-full overflow-hidden bg-secondary py-6 ${kronaOne.className}`}
         >
           <motion.div
-            className="h-full flex flex-row gap-8 justify-center items-center"
+            className="h-full flex flex-row gap-40 sm:gap-8 justify-center items-center"
             initial={{ x: "100%" }}
-            animate={{ x: ["100%", "-100%"] }}
+            animate={{ x: ["100%", "-150%"] }}
             transition={{
               duration: 5,
               ease: "linear",
