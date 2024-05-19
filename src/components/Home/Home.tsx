@@ -5,7 +5,6 @@ import ToggleButton from "../GeneralComponents/ToggleButton";
 import Image from "next/image";
 import AnimatedBanner from "../GeneralComponents/AnimatedBanner";
 import ImagesCarousel from "../GeneralComponents/ImagesCarousel";
-import { motion } from "framer-motion";
 import EventsRightSide from "../GeneralComponents/EventsRightSide";
 import CollectionsRightSide from "../GeneralComponents/CollectionsRightSide";
 
@@ -25,14 +24,14 @@ const eventImages = [
 
 const Home = () => {
   const [windowWidth, setWindowWidth] = useState<any>(1024);
-  const [activeWord, setActiveWord] = useState("Events"); // Initial state
-  const [isReset, setReset] = useState(false); // Initial state
+  const [activeWord, setActiveWord] = useState("Events");
 
+  // handling the toggle of event and collection button
   const handleClick = (word: string) => {
-    setReset(true);
     setActiveWord(word);
   };
 
+  // this useeffect is handling the adjustment of width size according to the screen
   useEffect(() => {
     if (typeof window !== "undefined") {
       setWindowWidth(window.innerWidth);

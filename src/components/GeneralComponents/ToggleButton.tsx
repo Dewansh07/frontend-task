@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 
 const ToggleButton = ({activeWord,handleClick}:{activeWord:string,handleClick:(word: string) => void}) => {
 
