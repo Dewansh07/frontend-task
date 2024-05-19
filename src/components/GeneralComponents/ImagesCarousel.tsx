@@ -52,14 +52,14 @@ const ImagesCarousel = ({
           >
             {activeWord === "Collections" && (
               <div
-                className={`flex flex-col text-white mb-4 transition-all ${
+                className={`flex flex-col text-white mb-4 transition-all mt-4 xs:mt-0 ${
                   activeImage === index || activeImage + 1 === index
                     ? "opacity-100"
                     : "opacity-0"
                 }`}
               >
-                <p className="text-lg sm:text-3xl font-bold">Lunar Palace:</p>
-                <p className="text-base sm:text-2xl font-bold"> (ft. Kanye west)</p>
+                <p className="text-base xs:text-lg sm:text-3xl font-bold">Lunar Palace:</p>
+                <p className="text-sm xs:text-base sm:text-2xl font-bold"> (ft. Kanye west)</p>
               </div>
             )}
             <div className="relative">
