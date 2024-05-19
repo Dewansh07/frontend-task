@@ -54,15 +54,15 @@ const CollectionsRightSide = () => {
         Explore Your First Collectible
       </p>
       <div className="flex flex-col gap-4 2xl:gap-6 mt-8 2xl:mt-10">
-        <p className="font-extrabold text-5xl 2xl:text-[57px] leading-[62px] w-1/3">
+        <p className="font-extrabold mb-4 lg:mb-0 text-3xl sm:text-4xl lg:text-5xl 2xl:text-[57px] lg:leading-[62px] lg:w-1/3">
           Meta Lives
         </p>
-        <p className="font-bold text-2xl">Live in Astrix</p>
-        <p className="font-medium lg:w-8/12 2xl:w-1/2">
+        <p className="font-bold text-lg sm:text-2xl">Live in Astrix</p>
+        <p className="text-sm sm:text-base font-medium lg:w-8/12 2xl:w-1/2">
           Lorem ipsum dolor sit amet consectetur. Ac lorem massa in morbi et sed
           ipsum. Pellentesque mattis condimentum ut nulla.{" "}
         </p>
-        <div className="flex gap-8 items-center mt-4">
+        <div className="flex flex-col sm:flex-row gap-8 items-center mt-4">
           <div className="flex items-center">
             {ellipses.map((image, index) => {
               return (
@@ -86,7 +86,7 @@ const CollectionsRightSide = () => {
       <p className="text-sm mt-12 mb-4">Collectibles</p>
       <div className="overflow-hidden lg:-mr-[100px]">
         <Swiper
-          slidesPerView={3} // Show part of the next slides
+          slidesPerView={2} // Show part of the next slides
           spaceBetween={30}
           autoplay={{
             delay: 2500,

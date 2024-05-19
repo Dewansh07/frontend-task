@@ -51,11 +51,11 @@ const Home = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:h-screen overflow-hidden w-full">
       <div className="flex flex-col w-full lg:w-7/12 py-8">
-        <div className="flex gap-4 items-center ml-8">
+        <div className="flex gap-4 items-center ml-4 sm:ml-8 mb-4">
           <LogoSVG />
           <h1 className="text-accent font-extrabold text-[40px]">Astrix.</h1>
         </div>
-        <div className="flex h-[80vh] w-full py-4 overflow-hidden">
+        <div className="flex h-[70vh] sm:h-[80vh] w-full py-4 overflow-hidden">
           <div className="absolute h-[75vh] hidden sm:flex flex-col justify-between text-muted text-[128px] leading-[112px] ml-8">
             <div>
               <p>ASTR</p>
@@ -79,7 +79,7 @@ const Home = () => {
             activeWord={activeWord}
           />
         </div>
-        <div className="ml-8">
+        <div className="ml-4 sm:ml-8">
           <ToggleButton activeWord={activeWord} handleClick={handleClick} />
         </div>
       </div>
@@ -90,13 +90,13 @@ const Home = () => {
         ) : (
           <CollectionsRightSide />
         )}
-        <div className="flex w-full mt-20">
+        <div className="flex flex-col xs:flex-row gap-8 xs:gap-0 w-full mt-20">
           {activeWord === "Events" && (
             <div className="h-[105px] w-[105px] relative">
               <Image src={"/images/barcode.png"} alt="qr-scanner" fill />
             </div>
           )}
-          <button className="self-end text-black bg-accent text-2xl px-6 py-2 rounded-3xl font-bold ml-auto lg:mr-6">
+          <button className="self-start sm:self-end text-black bg-accent text-xl sm:text-2xl px-4 sm:px-6 py-2 rounded-3xl font-bold sm:ml-auto lg:mr-6">
             Join Waitlist
           </button>
         </div>

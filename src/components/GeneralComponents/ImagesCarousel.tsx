@@ -58,15 +58,15 @@ const ImagesCarousel = ({
                     : "opacity-0"
                 }`}
               >
-                <p className="text-3xl font-bold">Lunar Palace:</p>
-                <p className="text-2xl font-bold"> (ft. Kanye west)</p>
+                <p className="text-lg sm:text-3xl font-bold">Lunar Palace:</p>
+                <p className="text-base sm:text-2xl font-bold"> (ft. Kanye west)</p>
               </div>
             )}
             <div className="relative">
               <img
                 src={src}
                 alt={`carousel-${index}`}
-                className={`w-full object-cover  ${activeWord === "Events" ? "h-[550px]" : "h-[500px]" } w-[300px] sm:w-[412px] ${
+                className={`w-full object-cover  ${activeWord === "Events" ? "h-[400px] sm:h-[550px]" : "h-[450px] sm:h-[500px]" } w-[300px] sm:w-[412px] ${
                   activeImage === index ? "opacity-100" : "opacity-50"
                 }`}
               />
